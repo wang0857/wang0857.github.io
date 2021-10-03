@@ -8,10 +8,22 @@
         body {
             padding: 10px 80px;
             line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        h1,h3 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        nav {
+            padding: 10px;
+            background-color: slategray;
+        }
+
+        nav a {
+            margin-right: 20px;
+            color:white;
+            text-decoration: initial;
+        }
+
+        th,td {
+            padding: 5px 10px;
         }
 
         .quote {
@@ -19,17 +31,55 @@
         }
 
         body footer {
-            color: gray;
+            color: slategray;
         }
     </style>
     <title>Ruo-Fang Wang</title>
 </head>
 <body>
+    <header><h1>Introduction of Ruo-Fang Wang</h1></header>
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#learning-background">Learning Background</a>
+        <a href="#start-to-learn">Start to Learn Basic Web Language</a>
+        <a href="notes.html" target="_blank">Notes Page</a>
+    </nav>
     <article>
-        <h1>About Me</h1>
+        <h2 id="about-me">About Me</h2>
         <hr>
         <br>
-        <h3><em>Learning background of Ruo-Fang Wang</em></h3>
+        <table>
+            <!-- <caption>My Information</caption> -->
+            <tr>
+                <th>Photo</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <img src="images/Ruo-Fang-photo.jpg" alt="Ruo-Fang's Photo" width="250">
+                </td>
+                <td>
+                    Hobbies: 
+                    <ul style="list-style-type:square">
+                        <li>Reading Novels</li>
+                        <li>Watching animies</li>
+                        <li>Travling</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Language:
+                    <ul style="list-style-type:square">
+                        <li>Mandarin</li>
+                        <li>Taiwanese</li>
+                        <li>English</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <h3 id="learning-background"><em>Learning Background</em></h3>
         <p>
             I’m an international student originally from Taiwan<sup>[<a href="#note-1">1</a>]</sup> and graduated with a bachelor’s degree in economics from National Taipei University<sup>[<a href="#note-2">2</a>]</sup>. After graduation, I worked as a Marketing Officer for four years. When working in the field of Marketing, I communicated with many designers for different types of marketing materials, e.g., promotion websites, online application form, DM, eDM and content videos. That was my first time to know about interactive media and website design.                        
         </p>
@@ -37,16 +87,16 @@
             For web design, I did encounter some confusing problems when I was testing the website with web designers. For example, our company set older version browser as a default, yet the web designer designed a website that could only be seen in new version browser. As a result, no matter how many times I refreshed the tested website, it never showed a right layout. After many communications and testing with the web designer, eventually we figured out the solution which was to adjust my browser’s setting. Within this experience, I found it a sense of accomplishment to figure out the solution of a website. Especially when I looked the code in Chrome Developer Tools with the web developer, I thought those codes were cool, so I hoped that I could learn this language!
         </p>
         <br>
-        <h3><em>Start to learn <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript, and come to Canada</em></h3>
+        <h3 id="start-to-learn">
+            <em>Start to Learn <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript, and Come to Canada</em>
+        </h3>
         <p>
             After many considerations, I resigned from my company, and started to learn those basic website languages such as <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript. During self-learning, I was also searching for a related program to study with others because I thought that it would inspire me with more ideas to design a beautiful website. The second reason for me to study a second program was to have a relative learning background of website design. While I was searching for programs which were related to web design, I found Interactive Media Design program of Algonquin College. The course list of <abbr title="Interactive Media Design">IMD</abbr> program was amazing because it contained many types of media design. What’s more, there were many resources in the college to help students find a job after graduation. I thought it was exactly what I wanted, so I applied for this program and came to Canada for studying this program ultimately.
         </p>
-        <p>
-            <blockquote class="quote">
-                “It is the choices we make that ultimately determine the outcome of our lives.”<br>
-                --<cite>Clifton L. Taulbert and Gray Schoeniger, 2010, Who Owns the Ice House?</cite>
-            </blockquote>
-        </p>
+        <blockquote class="quote">
+            “It is the choices we make that ultimately determine the outcome of our lives.”<br>
+            --<cite>Clifton L. Taulbert and Gray Schoeniger, 2010, Who Owns the Ice House?</cite>
+        </blockquote>
         <p>
             Though I’m not sure what my future will be like after I choose to study this program, I’m still excited to start a new journey to change my career path. I believe that I can learn a lot of meaningful things in this program as well as the life in Canada, and this is going to change my life. However, it’s just my first month, my journey has just started, and there are still lots of tasks for me to conquer. I wish that I can always remember my initial purpose to be here, overcome those obstacles, and persist in what I want to learn.    
         </p>
@@ -56,10 +106,9 @@
         <br>
     </article>
     <hr>
-    <p>
-        Note:<br><br>
-        1. Taiwan:
-        <blockquote id="note-1">
+    <p>Note:</p>
+        <p id="note-1">1. Taiwan: </p>
+        <blockquote>
             "<b>Taiwan</b>, officially the Republic of China (ROC), is an island country in East Asia. The main island of Taiwan, known historically in Portuguese and English as Formosa, makes up 99% of the area controlled by the ROC, measuring 35,808 square kilometres (13,826 sq mi) and lying some 180 kilometres (112 mi) across the Taiwan Strait from the southeastern coast of mainland China."
             <br><br>
             "The island of Taiwan lies across the Tropic of Cancer, and its climate is influenced by the East Asian Monsoon. Northern Taiwan has a humid subtropical climate, with substantial seasonal variation of temperatures, while parts of central and most of southern Taiwan have a tropical monsoon climate where seasonal temperature variations are less noticeable, with temperatures typically varying from warm to hot."
@@ -67,13 +116,12 @@
             --<cite>Wikipedia contributors. (2021, September 21). Geography of Taiwan. In Wikipedia, The Free Encyclopedia. Retrieved 18:54, September 23, 2021, from https://en.wikipedia.org/w/index.php?title=Geography_of_Taiwan&oldid=1045663145</cite>
         </blockquote>
         <br>
-        2. National Taipei University:
-        <blockquote id="note-2">
+        <p id="note-2">2. National Taipei University: </p>
+        <blockquote>
             "<b>Taipei University (NTPU; Chinese: 國立臺北大學)</b>, founded in 1949, is a national university in Taiwan which specializes in law, business, humanities, and social sciences."
             <br><br>
             --<cite>Wikipedia contributors. (2021, September 20). National Taipei University. In Wikipedia, The Free Encyclopedia. Retrieved 19:06, September 23, 2021, from https://en.wikipedia.org/w/index.php?title=National_Taipei_University&oldid=1045411341</cite>
         </blockquote>
-    </p>
     <hr>
     <footer>
         Copyright 2021 Ruo-Fang Wang.
