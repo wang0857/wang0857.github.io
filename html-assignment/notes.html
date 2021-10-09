@@ -4,191 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            padding: 10px 80px;
-            line-height: 1.6;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        nav {
-            padding: 10px;
-            background-color: slategray;
-        }
-
-        nav a {
-            margin-right: 20px;
-            color:white;
-            text-decoration: initial;
-        }
-
-        dt {
-            margin: 30px 0px 15px 0px;
-            font-size: 16pt;
-            font-weight: bold;
-        }
-
-        table {
-            width: 33%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-            padding: 5px 10px;
-            text-align: center;
-        }
-
-        .form {
-            margin: 10px 0px;
-        }
-
-        h3 a {
-            color: turquoise;
-            text-decoration: initial;
-        }
-
-        body footer {
-            color: slategray;
-        }
-    </style>
+    <link href="css/main.css" rel="stylesheet">
     <title>Notes of Five HTML Tags</title>
 </head>
 <body>
     <header>
         <h1>Five HTML Tags I Have Learnt</h1>
     </header>
-    <nav>
-        <a href="#html-tag-1">Table</a>
-        <a href="#html-tag-2">Form</a>
-        <a href="#html-tag-3">List</a>
-        <a href="#html-tag-4">Image</a>
-        <a href="#html-tag-5">Link</a>
-        <a href="index.html">Go Back to Index Page</a>
-    </nav>
-    <!-- need more extention for below content -->
-    <section>
-        <dl>
-            <dt id="html-tag-1">Table</dt>
-            <dd>
-                The &lt;table&gt; tag enables us to organize the information in a table.<br>
-                Example:<br>
-                <table>
-                    <caption><h3>Product Sale</h3></caption>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>Shirts</th>
-                        <th>Pants</th>
-                        <th>Shorts</th>
-                    </tr>
-                    <tr>
-                        <th>Quantity</th>
-                        <td>10</td>
-                        <td>15</td>
-                        <td>20</td>
-                    </tr>
-                </table>
-            </dd>
-
-            <dt id="html-tag-2">Form</dt>
-            <dd>
-                The &lt;form&gt; tag can create a form to fill in on a webpage. Users can fill in their information and submit it to a database or a data server.<br>
-                Example:<br>
-                <form action="thankyou.html" method="post">
-                    <h3>Membership Information</h3>
-                    <div class="form">
-                        <label for="name">Name: </label>
-                        <input type="text" id="name" name="name" placeholder="Please input your full name.">
-                    </div>
-                    <div class="form">
-                        Gender: 
-                        <input type="radio" id="gender-m" name="gender" value="1">
-                        <label for="gender-m">Male</label>
-                        <input type="radio" id="gender-f" name="gender" value="0" checked>
-                        <label for="gender-f">Female</label>
-                    </div>
-                    <div class="form">
-                        <label for="birthday">Date of birth: </label>
-                        <input type="date" id="birthday" name="birthday">
-                    </div>
-                    <div class="form">
-                        <label for="age">Age: </label>
-                        <input type="number" id="age" name="age" min="0" max="100">
-                    </div>
-                    <div class="form">
-                        <label for="email">E-mail: </label>
-                        <input type="text" id="email" name="email" placeholder="Please input your e-mail.">
-                    </div>
-                    <div class="form">
-                        <label for="favoriteProduct">Your favorite product: </label>
-                        <Select id="favoriteProduct" name="favoriteProduct">
-                            <option value="Skirts">Skirts</option>
-                            <option value="Pants">Pants</option>
-                            <option value="Shorts">Shorts</option>
-                        </Select>
-                    </div>
-                    <div class="form">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-            </dd>
-
-            <dt id="html-tag-3">List</dt>
-            <dd>
-                The &lt;list&gt; tag allow order or unordered items to be listed on a webpage. When we need to give some examples, using &lt;list&gt; can make those examples organized.<br>
-                Example:<br>
-                <h3>My favorite food: </h3>
-                <ul>
-                    <li>French Fries</li>
-                    <li>Fried Chicken</li>
-                    <li>Salad</li>
-                    <li>Waffles</li>
-                </ul>
-                <h3>My favorite colours rank: </h3>
-                <ol>
-                    <li>Black</li>
-                    <li>White</li>
-                    <li>Blue-green</li>
-                    <li>Purple</li>
-                </ol>
-            </dd>
-
-            <dt id="html-tag-4">Image</dt>
-            <dd>
-                The &lt;img&gt; tag enables us to display a picture on the webpage.<br>
-                Example: <br>
-                <h3>Water Splitting</h3>
-                <img src="images/wang-r-water-split.jpg" alt="Photo of Water Splitting" width="450" height="299">
-            </dd>
-
-            <dt id="html-tag-5">Link</dt>
-            <dd>
-                We can use the &lt;a&gt; tag to insert a hyperlink to another page or other position on the webpage.<br>
-                Example: <br>
-                <ul>
-                    <li>
-                        <h3>
-                            <a href="https://www.google.com/" target="_blank">Link to Google</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>Go to the 
-                            <a href="#html-tag-1">Table</a> / 
-                            <a href="#html-tag-2">Form</a> / 
-                            <a href="#html-tag-3">List</a> / 
-                            <a href="#html-tag-4">Image</a> section
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="#">Go to the top</a>
-                        </h3>
-                    </li>
-                </ul>
-            </dd>
-        </dl>
-    </section>
-    <hr>
+    
+    <div class="nav">
+        <div class="nav-item">
+            <a href="#html-tag-1">Table</a>
+        </div>
+        <div class="nav-item">
+            <a href="#html-tag-2">Form</a>
+        </div>
+        <div class="nav-item">
+            <a href="#html-tag-3">List</a>
+        </div>
+        <div class="nav-item">
+            <a href="#html-tag-4">Image</a>
+        </div>
+        <div class="nav-item">
+            <a href="#html-tag-5">Link</a>
+        </div>
+        <div class="nav-item">
+            <a href="index.html">Go Back to Index Page</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section>
+            <dl>
+                <dt class="html-tags-list-title" id="html-tag-1">Table</dt>
+                <dd>
+                    The &lt;table&gt; tag enables us to organize the information in a table.<br>
+                    Example:<br>
+                    <table class="table-tag-demo">
+                        <caption><h3>Product Sale</h3></caption>
+                        <tr>
+                            <th class="table-tag-demo">Product Name</th>
+                            <th class="table-tag-demo">Shirts</th>
+                            <th class="table-tag-demo">Pants</th>
+                            <th class="table-tag-demo">Shorts</th>
+                        </tr>
+                        <tr>
+                            <th class="table-tag-demo">Quantity</th>
+                            <td class="table-tag-demo">10</td>
+                            <td class="table-tag-demo">15</td>
+                            <td class="table-tag-demo">20</td>
+                        </tr>
+                    </table>
+                </dd>
+    
+                <dt class="html-tags-list-title" id="html-tag-2">Form</dt>
+                <dd>
+                    The &lt;form&gt; tag can create a form to fill in on a webpage. Users can fill in their information and submit it to a database or a data server.<br>
+                    Example:<br>
+                    <form action="thankyou.html" method="post">
+                        <h3>Membership Information</h3>
+                        <div class="form-tag-demo">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="name" placeholder="Please input your full name.">
+                        </div>
+                        <div class="form-tag-demo">
+                            Gender: 
+                            <input type="radio" id="gender-m" name="gender" value="1">
+                            <label for="gender-m">Male</label>
+                            <input type="radio" id="gender-f" name="gender" value="0" checked>
+                            <label for="gender-f">Female</label>
+                        </div>
+                        <div class="form-tag-demo">
+                            <label for="birthday">Date of birth: </label>
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                        <div class="form-tag-demo">
+                            <label for="age">Age: </label>
+                            <input type="number" id="age" name="age" min="0" max="100">
+                        </div>
+                        <div class="form-tag-demo">
+                            <label for="email">E-mail: </label>
+                            <input type="text" id="email" name="email" placeholder="Please input your e-mail.">
+                        </div>
+                        <div class="form-tag-demo">
+                            <label for="favoriteProduct">Your favorite product: </label>
+                            <Select id="favoriteProduct" name="favoriteProduct">
+                                <option value="Skirts">Skirts</option>
+                                <option value="Pants">Pants</option>
+                                <option value="Shorts">Shorts</option>
+                            </Select>
+                        </div>
+                        <div class="form-tag-demo">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </dd>
+    
+                <dt class="html-tags-list-title" id="html-tag-3">List</dt>
+                <dd>
+                    The &lt;list&gt; tag allow order or unordered items to be listed on a webpage. When we need to give some examples, using &lt;list&gt; can make those examples organized.<br>
+                    Example:<br>
+                    <h3>My favorite food: </h3>
+                    <ul>
+                        <li>French Fries</li>
+                        <li>Fried Chicken</li>
+                        <li>Salad</li>
+                        <li>Waffles</li>
+                    </ul>
+                    <h3>My favorite colours rank: </h3>
+                    <ol>
+                        <li>Black</li>
+                        <li>White</li>
+                        <li>Blue-green</li>
+                        <li>Purple</li>
+                    </ol>
+                </dd>
+    
+                <dt class="html-tags-list-title" id="html-tag-4">Image</dt>
+                <dd>
+                    The &lt;img&gt; tag enables us to display a picture on the webpage.<br>
+                    Example: <br>
+                    <h3>Water Splitting</h3>
+                    <img src="images/wang-r-water-split.jpg" alt="Photo of Water Splitting" width="450" height="299">
+                </dd>
+    
+                <dt class="html-tags-list-title" id="html-tag-5">Link</dt>
+                <dd>
+                    We can use the &lt;a&gt; tag to insert a hyperlink to another page or other position on the webpage.<br>
+                    Example: <br>
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="https://www.google.com/" target="_blank"  class="link-demo">Link to Google</a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>Go to the 
+                                <a href="#html-tag-1" class="link-demo">Table</a> / 
+                                <a href="#html-tag-2" class="link-demo">Form</a> / 
+                                <a href="#html-tag-3" class="link-demo">List</a> / 
+                                <a href="#html-tag-4" class="link-demo">Image</a> section
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="#" class="link-demo">Go to the top</a>
+                            </h3>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+    </div>
+    
     <footer>
         Copyright 2021 Ruo-Fang Wang.
     </footer>
