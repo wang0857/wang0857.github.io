@@ -1,0 +1,152 @@
+
+/* ----------------Main Page CSS---------------- */
+/* ----------------Header,Body,Footer---------------- */
+
+body {
+    margin: 0px;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+header,footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #575660;
+    color: white;
+    
+}
+
+.container {
+    margin: 0px;
+    padding: 0% 12%;
+}
+
+
+
+/* ----------------Navigator---------------- */
+
+.nav {
+    padding: 0px 10px;
+    background-color: slategray;
+    text-align: center;
+    position: relative;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    margin: -5px 0px -6px 0px;
+    padding: 10px;
+    
+}
+
+.nav-item a {
+    padding: 6px;
+    color:white;
+    text-decoration: none;
+    border: 1px solid white;
+    transition: font-weight .25s ease-in-out;
+}
+
+.nav-item a:hover {
+    background-color: white;
+    font-weight: bold;
+    color: slategray;
+
+}
+
+.nav-item a:active {
+    color: paleturquoise
+}
+
+
+
+/* ----------------Article Title---------------- */
+
+.p-header {
+    color: #C58D7C;
+    text-align: center;
+}
+
+
+
+/* ----------------Information Table---------------- */
+
+.photo-info-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-info-table-coml-1 {
+    padding: 5px 10px;
+}
+
+#my-photo {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+.hobbie-list {
+    list-style-type:square;
+}
+
+.hobbie-list-item:nth-child(odd) {
+    background-color: rgba(184, 157, 174, 0.3) ;
+}
+
+.language-list-item:nth-child(odd) {
+    background-color: rgba(184, 157, 174, 0.3) ;
+}
+
+
+
+/* ----------------Paragraph---------------- */
+
+.quote {
+    color: darkslateblue;
+}
+
+
+
+
+
+
+/* ----------------Notes Page CSS---------------- */
+
+
+.html-tags-list-title {
+    margin: 30px 0px 15px 0px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.table-tag-demo {
+    width: 33%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.form-tag-demo {
+    margin: 10px 0px;
+}
+
+.link-demo {
+    background-color: turquoise;
+    color: #30656E;
+    text-decoration: none;
+    border: 1px solid turquoise;
+    transition: all .5s ease-in-out;
+}
+
+.link-demo:hover {
+    background-color: #30656E;
+   
+    color: white;
+}
+
+.link-demo:active {
+    background-color: #799AAD;
+    color: white;
+}
