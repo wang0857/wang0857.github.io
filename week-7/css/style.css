@@ -1,0 +1,113 @@
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* nav {
+    float: left;
+} */
+
+nav ul li {
+    display: inline-block;
+    width: 100px;
+}
+
+
+
+
+.box {
+    width: 200px;
+    background-color: slategray;
+    color: white;
+    /* introduce box model */
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    /* float boxes beside each other */
+    float: left;
+}
+
+/* center a box level element */
+/* .box1 {
+    margin: 0px auto;
+} */
+
+/* box-sizing裡margin沒有被計入 */
+/* 一般的寬度計算，總寬度=200+10*2+5*2=230 */
+.box1 {
+    box-sizing: content-box;
+}
+
+/* 固定總寬度為200，content的寬度變成200-10*2-5*2=170 */
+.box2 {
+    box-sizing: border-box
+}
+
+.clearfix {
+    border: 2px solid red;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.clear {
+    clear: left;
+}
+
+
+/* CSS Positioning */
+
+.stage {
+    height: 500px;
+    background-color: #aaa;
+    position: relative;
+}
+
+.prop {
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+
+    /* add positioning values */
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    z-index: 1;
+
+    /* position: absolute;
+    top: 0px; */
+
+
+    /* position: fixed;
+    top: 0px;
+    width: 100%; */
+
+
+}
+
+.prop2 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+
+    /* add positioning values */
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    z-index: 2;
+
+    /* position: absolute;
+    top: 0px; */
+
+
+    /* position: fixed;
+    top: 0px;
+    width: 100%; */
+
+
+}
