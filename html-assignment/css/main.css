@@ -9,7 +9,7 @@ body {
     font-size: 18px;
 }
 
-header,footer {
+.site-title, footer {
     padding: 10px;
     text-align: center;
     background-color: #575660;
