@@ -1,0 +1,142 @@
+
+/* ------------ *Overall Visual Setting_8column* ------------- */
+
+body {
+    margin: 0px;
+    padding: 0% 12.5% 0%;
+    background-color: #aad4cf;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+
+/* ------------ Set an image under header ------------- */
+
+header {
+    margin: 0px;
+    position: relative;
+    
+}
+
+header img {
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    
+}
+
+.banner-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 4.5vw;
+}
+
+
+
+/* ----------------------- *Content Start* ------------------------ */
+
+.content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 10px 30px;
+    margin: 0px;
+    transform: translateY(-10px);
+    background-color: #d4e9e7;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 3vw;
+}
+
+
+/* ------------ Set nav item inline, center, distributed horizontally and change its style------------ */
+
+.nav-link {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 32.6%;
+    text-align: center;
+}
+
+.nav-link:nth-child(1), .nav-link:nth-child(2) {
+    border-right: 3px solid gray ;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+
+
+/* ------------ Set picture float left and resize------------ */
+
+.intro-pic {
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+}
+
+
+
+/* ------------ Form Style and make label break to next line------------ */
+
+.form {
+    border: 2px solid black;
+    padding: 30px 20px 10px 10px;
+}
+
+.form-row, .form-row-radio {
+    margin-bottom: 20px;
+}
+
+.form-row label{
+    display: block;
+}
+
+.form-row input {
+    height: 30px;
+}
+
+.form-row input,textarea {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.submit-button {
+    border: 2px solid black;
+    background-color: #d4e9e7;
+    padding: 10px;
+    color: black;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+
+
+/* ------------ Set Footer to right ------------ */
+
+footer {
+    text-align: right;
+}
+
