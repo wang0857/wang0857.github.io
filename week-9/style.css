@@ -1,0 +1,85 @@
+
+/* Default Mobile=first styles */
+
+body {
+    background-color: #eee;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+.content {
+    background-color: white;
+}
+
+.header-title {
+    width: 75%;
+    margin: 0 auto;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: auto;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.small {
+    text-align: center;
+    display: block;
+}
+.large {
+    text-align: center;
+    display: none;
+}
+
+
+/* Tablet width: approx 600-1000px */
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    body {
+        font-size: 2.5rem;
+    }
+        
+    .header-title {
+        background-color: green;
+    }
+    
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: 3.5rem;
+    }
+        
+    .header-title {
+        background-color: red;
+    }
+    
+    .container {
+        width: 900px;
+    }
+
+    .small {
+        margin: 0 auto;
+        display: none;
+    }
+    .large {
+        margin: 0 auto;
+        display: block;
+    }
+}
