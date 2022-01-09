@@ -111,10 +111,15 @@ img {
 
 /* -----------------Navigation Anchor----------------- */
 
-/* .product-anchor {
+.product-anchor {
     position: relative;
-    top: -80px
-} */
+    top: -84px;
+}
+
+.contact-anchor {
+    position: relative;
+    top: -82px;
+}
 
 
 

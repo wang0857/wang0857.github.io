@@ -6,6 +6,10 @@ $(document).ready(function(){
         $(".navlist").slideToggle();
     });
 
+    $(".navlist").click(function(){
+        $(".navlist").slideToggle();
+    });
+
 });
 
 
